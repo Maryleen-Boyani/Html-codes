@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+    <title>Login page </title>
+
+    <style>
+        body{
+            background-color:beige;
+            text-decoration-color: black;
+        } 
+        form{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <h1> Welcome to the Dita Login Page</h1>
+   <h2> Please enter your name and password to continue</h2>
+   <form id="login-form">
+
+        <Label for="username"> Username</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="Password" >Password</label><br>
+        <input type="text" id="password" name="password"><br>
+        <button type="button" onclick="login()">Login</button>
+        <button type="button">Exit</button>
+    
+  </form>
+
+    <script>
+
+        //const users =[
+          // { username: "Boyani", password: "abcd" },
+            //{ username: "Maryleen", password: "abcd" }
+        //];
+        function login() {
+      
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+  
+                if (username === "Boyani" && password === "abcd") {
+                    alert("Welcome")
+                //window.location.href = "home.html";
+                } else if (username === "" && password === "") {
+                        alert("Please enter your username and password") 
+                } else {
+                    alert("Invalid username or password");
+                }        
+                    
+                
+              //  event.preventDefault();
+            }
+
+    
+    </script>                      
+</body>
+</html>
