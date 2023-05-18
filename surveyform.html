@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description"> This form is used by the organization to help improve its services. Kindly help us by filling it out. Thank you!</p>
+    <form id="survey-form" type="submit" method="post">
+    <fieldset class="one">
+      <div>
+        <label id="name-label" for="name">Name:</label><br><input id="name" name="name" type="text" placeholder="Enter your name" required/>
+        <label id="email-label" for="email">Email address:</label><br><input id="email" name="email" type="email" placeholder="Enter your email address" required/>
+        <label id="number-label" for="number">ID Number:</label><br><input id="number" name="number" type="number" placeholder="Enter your ID number here" pattern="[0-9]{8,}" max="8" min="8" required/>
+        <label for="hear">How did you know about us?
+        <select id="dropdown" name="dropdown">
+          <option value="">(Select one)</option>
+          <option value="1">Friends</option>
+          <option value="2">Posters</option>
+        </select>
+        </label>
+      </div>
+      
+        </fieldset>
+        <fieldset class="two">
+          <div>
+            <label for="personal-account"><input value="1" type="radio" name="account-type" class="inline"/>Personal account</label>
+            <label for="business-account"><input value="2" style="display:inline"; type="radio" name="account-type" class="inline"/>Business account</label>
+          </div>
+        
+        </fieldset>
+        <fieldset class="three">
+          
+        <label for="quiz">What would you like to see improved? (Check all that apply)</label>
+        <label for="improved" ><input value="1"  type="checkbox" name="improvements" display="inline" />Front-end projects</label>
+        <label for="improved" ><input value="2"  type="checkbox" name="improvements" display="inline" />Back-end projects</label>
+        <label for="improved" ><input value="3"  type="checkbox" name="improvements" display="inline" />Tutorials</label>
+        <label for="improved" ><input value="4"  type="checkbox" name="improvements" display="inline" />Courses offered</label>
+        <label for="improved" ><input value="5"  type="checkbox" name="improvements" display="inline" />Certifications qualities</label>
+        <textarea></textarea>
+        </fieldset>
+  
+    <button type="submit" id="submit">Submit</button>
+    </form>
+
+    
+        
+  </body>
+</html>
